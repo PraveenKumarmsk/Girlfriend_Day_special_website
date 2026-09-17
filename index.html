@@ -491,7 +491,7 @@
   </section>
 
   <section id="section2" class="section">
-    <img src="images/Image0.jpeg" alt="Saloni" class="photo-large" id="main-photo" onerror="this.src='data:image/svg+xml,%3Csvg xmlns=%27http://www.w3.org/2000/svg%27 width=%27400%27 height=%27400%27 viewBox=%270 0 100 100%27%3E%3Crect width=%27100%27 height=%27100%27 fill=%27%23f7d7e2%27/%3E%3Ctext x=%2710%27 y=%2755%27 font-family=%27Quicksand%27 font-size=%2712%27 fill=%27%23914e6b%27%3EImage1.jpeg%3C/text%3E%3C/svg%3E'">
+    <img src="images/Image0.png" alt="Saloni" class="photo-large" id="main-photo" onerror="this.src='data:image/svg+xml,%3Csvg xmlns=%27http://www.w3.org/2000/svg%27 width=%27400%27 height=%27400%27 viewBox=%270 0 100 100%27%3E%3Crect width=%27100%27 height=%27100%27 fill=%27%23f7d7e2%27/%3E%3Ctext x=%2710%27 y=%2755%27 font-family=%27Quicksand%27 font-size=%2712%27 fill=%27%23914e6b%27%3EImage1.png%3C/text%3E%3C/svg%3E'">
     <div class="hello-name">Hello Saloni ❤️</div>
     <p style="font-size:1.2rem; max-width:400px; margin:0.6rem auto; color:#7b4b60;">Today isn't just another day...<br>I wanted to create something special just for you.</p>
     <div class="continue-arrow" id="scrollArrow">↓</div>
@@ -659,8 +659,8 @@
       for (let i = 1; i <= 10; i++) {
         const div = document.createElement('div');
         div.className = 'timeline-item';
-        const imgSrc = `images/Image${i}.jpeg`;
-        div.innerHTML = `<img src="${imgSrc}" alt="Moment ${i}" onerror="this.src='data:image/svg+xml,%3Csvg xmlns=%27http://www.w3.org/2000/svg%27 width=%27200%27 height=%27200%27 viewBox=%270 0 100 100%27%3E%3Crect width=%27100%27 height=%27100%27 fill=%27%23f0d5df%27/%3E%3Ctext x=%2715%27 y=%2755%27 font-family=%27Quicksand%27 font-size=%2710%27 fill=%27%23914e6b%27%3EImage${i}.jpg%3C/text%3E%3C/svg%3E'"><p>${captions[i-1]}</p>`;
+        const imgSrc = `images/Image${i}.png`;
+        div.innerHTML = `<img src="${imgSrc}" alt="Moment ${i}" onerror="this.src='data:image/svg+xml,%3Csvg xmlns=%27http://www.w3.org/2000/svg%27 width=%27200%27 height=%27200%27 viewBox=%270 0 100 100%27%3E%3Crect width=%27100%27 height=%27100%27 fill=%27%23f0d5df%27/%3E%3Ctext x=%2715%27 y=%2755%27 font-family=%27Quicksand%27 font-size=%2710%27 fill=%27%23914e6b%27%3EImage${i}.png%3C/text%3E%3C/svg%3E'"><p>${captions[i-1]}</p>`;
         timelineGrid.appendChild(div);
       }
       const timelineObserver = new IntersectionObserver((entries) => {
